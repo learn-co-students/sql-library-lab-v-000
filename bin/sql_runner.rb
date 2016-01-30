@@ -1,5 +1,6 @@
 require_relative 'environment'
 
+require 'pry'
 class SQLRunner
   def initialize(db)
     @db = db
