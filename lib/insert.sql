@@ -18,7 +18,7 @@ INSERT INTO books (id, title, year, series_id) VALUES
   (5, "Second Book", 2003, 2),
   (6, "Third Book", 2005, 2);
 
-INSERT INTO characters (id, name, species, motto, series_id, author_id) VALUES
+INSERT INTO characters (id, name, motto, species, series_id, author_id) VALUES
   (1, "Lady", "Woof Woof", "direwolf", 1, 1),
   (2, "Tyrion Lanister", "A Lanister always pays is debts", "human", 1, 1),
   (3, "Daenerys Targaryen", "If I look back I am lost", "human", 1, 1),
