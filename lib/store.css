@@ -1,0 +1,31 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #1c242f;
+  background: #ffd505;
+}
+
+header, main {
+  width: 900px;
+  margin: 0 auto 30px auto;
+}
+
+header {
+  padding: 30px 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: #047ec1;
+}
+
+header h1 {
+  padding: 0 25px;
+  font-size: 2.4em;
+  color: white;
+}
+
+main {
+  background: #ececec;
+  padding: 25px;
+  box-sizing: border-box;
+}
