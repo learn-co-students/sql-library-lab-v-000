@@ -1,5 +1,5 @@
-INSERT INTO series (title, author, subgenre, author_id, subgenre_id) VALUES ("Lord of the Rings", "JRR Tolkien", "fantasy", 1, 1);
-INSERT INTO series (title, author, subgenre, author_id, subgenre_id) VALUES ("Star Wars", "George Lucas", "space opera", 2, 2);
+INSERT INTO series (title, author, author_id, subgenre_id) VALUES ("Lord of the Rings", 1, 1);
+INSERT INTO series (title, author, author_id, subgenre_id) VALUES ("Star Wars", 2, 2);
 
 INSERT INTO subgenres (name) VALUES ("fantasy");
 INSERT INTO subgenres (name) VALUES ("space opera");
