@@ -1,3 +1,3 @@
 UPDATE characters
-SET species = 'Martin'
+SET species = 'Martian'
 WHERE characters.id = 8;
