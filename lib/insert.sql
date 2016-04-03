@@ -28,4 +28,20 @@ INSERT INTO subgenres (name) VALUES
 ("Sifi"), 
 ("Action");
 
-
+INSERT INTO character_books (book_id, character_id) VALUES 
+(2, 7),
+(4, 3),
+(1, 3),
+(1, 5),
+(6, 2),
+(4, 3),
+(6, 3),
+(3, 7),
+(3, 1),
+(2, 5),
+(2, 8),
+(2, 4),
+(3, 4),
+(6, 1),
+(6, 4),
+(5, 4);
