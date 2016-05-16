@@ -1,9 +1,4 @@
 
-#Series: title, author name, sub-genre
-#Sub-Genre: name
-#Authors: name
-#Books: title, year, belong to series
-#Characters: name, motto, species, belong to author, belong to series
 CREATE TABLE series (
 id INTEGER PRIMARY KEY,
 title TEXT,
@@ -24,7 +19,7 @@ name TEXT
 CREATE TABLE books (
 id INTEGER PRIMARY KEY,
 title TEXT,
-year TEXT,
+year INTEGER,
 series_id INTEGER
 );
 
