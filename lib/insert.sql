@@ -20,22 +20,22 @@ INSERT INTO characters (id, name, species, motto, series_id, author_id) VALUES (
 INSERT INTO characters (id, name, species, motto, series_id, author_id) VALUES (7, "Yoda", "Unknown", "Do or do not, there is no try", 1, 1);
 INSERT INTO characters (id, name, species, motto, series_id, author_id) VALUES (8, "Han Sola", "Human", "Nice shot kid!", 1, 1);
 
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
-INSERT INTO character_books (id, book_id, character_id) VALUES (id, book_id, character_id)
+INSERT INTO character_books (id, book_id, character_id) VALUES (1, 5, 1);
+INSERT INTO character_books (id, book_id, character_id) VALUES (2, 6, 1);
+INSERT INTO character_books (id, book_id, character_id) VALUES (3, 5, 2);
+INSERT INTO character_books (id, book_id, character_id) VALUES (4, 6, 2);
+INSERT INTO character_books (id, book_id, character_id) VALUES (5, 4, 3);
+INSERT INTO character_books (id, book_id, character_id) VALUES (6, 5, 3);
+INSERT INTO character_books (id, book_id, character_id) VALUES (7, 6, 3);
+INSERT INTO character_books (id, book_id, character_id) VALUES (8, 1, 5);
+INSERT INTO character_books (id, book_id, character_id) VALUES (9, 2, 5);
+INSERT INTO character_books (id, book_id, character_id) VALUES (10, 3, 5);
+INSERT INTO character_books (id, book_id, character_id) VALUES (11, 1, 6);
+INSERT INTO character_books (id, book_id, character_id) VALUES (12, 2, 6);
+INSERT INTO character_books (id, book_id, character_id) VALUES (13, 3, 6);
+INSERT INTO character_books (id, book_id, character_id) VALUES (14, 2, 7);
+INSERT INTO character_books (id, book_id, character_id) VALUES (15, 1, 8);
+INSERT INTO character_books (id, book_id, character_id) VALUES (16, 2, 8);
 
 INSERT INTO subgenres (id, name) VALUES (1, "Space");
 INSERT INTO subgenres (id, name) VALUES (2, "Middle Ages");
