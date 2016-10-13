@@ -1,0 +1,6 @@
+INSERT INTO series (author_id, subgenre_id, title) VALUES (1, 2, "Wolves"), (2, 1, "Space Wolves");
+INSERT INTO subgenres (name) VALUES ("animals"), ("space animals");
+INSERT INTO authors (name) VALUES ("Bob Roberts"), ("Rob Boberts");
+INSERT INTO books (title, year, series_id) VALUES ("Baby Wolf", 1979, 1), ("Wolfie", 1981, 1), ("Old Wolf", 1985, 1), ("Space Wolf Runs", 1990, 2), ("Space Wolf Redux", 1993, 2), ("Space Wolf is Rich", 1997, 2);
+INSERT INTO characters (name, species, motto, series_id, author_id) VALUES ("Wolfie", "Wolf", "I eat stuff", 1, 1), ("Baby Wolf", "Wolf", "I eat little stuff", 1, 1), ("Old Wolf", "Wolf", "I eat old stuff", 1, 1), ("Lady Wolf", "Wolf", "I eat pringles", 1, 1), ("Spacey", "space wolf", "I eat space stuff", 2, 2), ("Spaceo", "space wolf", "I eat space oreos", 2, 2), ("Grizzly", "pomeranian", "I'm a dog", 2, 2), ("Old Spacey", "space wolf", "I eat old space stuff", 2, 2);
+INSERT INTO character_books (character_id, book_id) VALUES (1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 3), (4, 3), (5, 4), (5, 5), (5, 6), (6, 4), (6, 5), (6, 6), (7, 6), (8, 6); 
