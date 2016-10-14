@@ -1,0 +1,28 @@
+creating schema authors table creates a authors table with a name field
+creating schema authors table creates a authors table with an id as a primary key
+creating schema books table creates a books table with a title field
+creating schema books table creates a books table with a year field
+creating schema books table creates a books table with a series_id field
+creating schema books table creates a books table with an id as a primary key
+creating schema characters table creates a characters table with a name field
+creating schema characters table creates a characters table with a species field
+creating schema characters table creates a characters table with a motto field
+creating schema characters table creates a characters table with a series_id field
+creating schema characters table creates a characters table with a author_id field
+creating schema characters table creates a characters table with an id as a primary key
+creating schema character_books join table creates a character_books table with an id as a primary key
+creating schema character_books join table creates a character_books table with a book_id field
+creating schema character_books join table creates a character_books table with a character_id field
+inserting has 2 series
+inserting has 6 books
+inserting has 8 characters
+inserting has 2 subgenres
+inserting has 2 authors
+inserting has 16 joins in character_books
+updating updates the species of the last character in the characters table to "Martian"
+querying selects all of the books titles and years in the first series and orders them chronologically
+querying returns the name and motto of the character with the longest motto
+querying determines the most prolific species of characters and return its value and count
+querying selects the authors names and their series' subgenres
+querying selects the series title with the most characters that are the species "human"
+querying selects all of the character names and their number of books they have appeared in, in descending order
