@@ -14,8 +14,6 @@ end
 def select_value_and_count_of_most_prolific_species
   "SELECT species, COUNT(*)
   FROM characters
-  JOIN character_books
-  ON characters.id = character_books.character_id
   GROUP BY species
   ORDER BY COUNT(*) DESC LIMIT 1;"
 end
