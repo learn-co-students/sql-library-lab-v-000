@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SQLRunner	bin/sql_runner.rb	/^class SQLRunner$/;"	c
+execute_data	bin/sql_runner.rb	/^  def execute_data$/;"	f	class:SQLRunner
+execute_insert_sql	bin/sql_runner.rb	/^  def execute_insert_sql$/;"	f	class:SQLRunner
+execute_schema_sql	bin/sql_runner.rb	/^  def execute_schema_sql$/;"	f	class:SQLRunner
+execute_update_sql	bin/sql_runner.rb	/^  def execute_update_sql$/;"	f	class:SQLRunner
+initialize	bin/sql_runner.rb	/^  def initialize(db)$/;"	f	class:SQLRunner
+select_books_titles_and_years_in_first_series_order_by_year	lib/querying.rb	/^def select_books_titles_and_years_in_first_series_order_by_year$/;"	f
+select_character_names_and_number_of_books_they_are_in	lib/querying.rb	/^def select_character_names_and_number_of_books_they_are_in$/;"	f
+select_name_and_motto_of_char_with_longest_motto	lib/querying.rb	/^def select_name_and_motto_of_char_with_longest_motto$/;"	f
+select_name_and_series_subgenres_of_authors	lib/querying.rb	/^def select_name_and_series_subgenres_of_authors$/;"	f
+select_series_title_with_most_human_characters	lib/querying.rb	/^def select_series_title_with_most_human_characters$/;"	f
+select_value_and_count_of_most_prolific_species	lib/querying.rb	/^def select_value_and_count_of_most_prolific_species$/;"	f
