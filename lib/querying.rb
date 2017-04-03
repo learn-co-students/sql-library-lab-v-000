@@ -47,11 +47,12 @@ order by count(*) DESC limit 1
 end
 
 def select_character_names_and_number_of_books_they_are_in
-"Select characters.name
+"Select characters.name, count(*)
 from characters
-left outer join books
-on books.series_id = characters.series_id
-group by count(books.series_id)
+left outer join character_books
+on character_books.character_id = characters.id
+group by characters.name
+order by count(*) DESC
 
 ;"
 end
