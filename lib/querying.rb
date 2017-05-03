@@ -11,14 +11,23 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT characters.species COUNT(characters.species) FROM characters"
+  "SELECT characters.species, COUNT(characters.species) AS frequency FROM characters GROUP BY characters.species ORDER BY frequency DESC LIMIT 1"
 end
 
 def select_name_and_series_subgenres_of_authors
+  "SELECT Authors.name, subgenres.name from Authors
+   JOIN Series ON series.author_id = authors.id
+   JOIN Subgenres ON series.subgenre_id = subgenres.id"
 end
 
 def select_series_title_with_most_human_characters
+  "SELECT series.title FROM series
+   JOIN Characters ON series.id = characters.series_id
+   WHERE characters.species = 'human' ORDER BY characters.species LIMIT 1"
 end
 
 def select_character_names_and_number_of_books_they_are_in
+  "SELECT characters.name, COUNT(character_books.book_id) AS frequency FROM characters
+   JOIN character_books ON character_books.character_id = characters.id
+   GROUP BY characters.name ORDER BY frequency DESC "
 end
