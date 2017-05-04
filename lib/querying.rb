@@ -40,12 +40,7 @@ SELECT series.title
 FROM series
 INNER JOIN characters
 ON series.id = characters.series_id
-WHERE series.id = (
-        SELECT characters.series_id
-        FROM characters
-        GROUP BY characters.series_id
-        HAVING characters.species = 'human'
-)
+WHERE characters.species = 'human'
 GROUP BY series.title LIMIT 1;
 "
 end
