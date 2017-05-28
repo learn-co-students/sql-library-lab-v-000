@@ -1,7 +1,21 @@
 def select_books_titles_and_years_in_first_series_order_by_year
+  #SELECT books.title, books.year, books.series_id, series.id, books.series_id = 1, books.year
+  "SELECT books.title, books.year
+  FROM books
+  JOIN series
+  ON books.series_id = series.id
+  WHERE books.series_id = 1
+  ORDER BY books.year;"
 end
 
 def select_name_and_motto_of_char_with_longest_motto
+  #characters.name, characters.motto, characters.name, characters.motto, characters.name compare mottos MAX?
+  #HAVING MAX(characters.motto)
+  "SELECT characters.name, characters.motto
+  FROM characters
+  GROUP BY characters.name
+  HAVING DATALENGTH(characters.motto)
+  ORDER BY characters.name LIMIT 1;"
 end
 
 def select_value_and_count_of_most_prolific_species
