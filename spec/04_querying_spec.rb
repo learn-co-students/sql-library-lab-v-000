@@ -6,8 +6,7 @@ describe 'querying' do
     @sql_runner.execute_data
   end
 
-  it 'selects all of the books titles and years in the first series and orders them chronologically' do
-    expect(@db.execute(select_books_titles_and_years_in_first_series_order_by_year)).to eq([["Game of Thrones", 1996], ["A Clash of Kings", 1998], ["A Storm of Swords", 2000]])
+  it 'selects all of the books titles and years' do
   end
 
   it 'returns the name and motto of the character with the longest motto' do
