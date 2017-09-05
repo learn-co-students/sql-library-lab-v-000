@@ -26,5 +26,13 @@ CREATE TABLE characters (
 
 CREATE TABLE books (
   id INTEGER PRIMARY KEY,
-  title TEXT
+  title TEXT,
+  year INTEGER,
+  series_id INTEGER
+);
+
+CREATE TABLE character_books (
+  id INTEGER PRIMARY KEY,
+  book_id INTEGER,
+  character_id INTEGER
 );
