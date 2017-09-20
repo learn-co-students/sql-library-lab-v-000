@@ -1,8 +1,7 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT books.title, books.year
+  "SELECT title, year
   from books
-  INNER JOIN series ON books.series_id = series.id
-  WHERE books.series_id = 1;"
+  WHERE series_id = 1;"
 end
 
 def select_name_and_motto_of_char_with_longest_motto
@@ -33,9 +32,9 @@ def select_series_title_with_most_human_characters
   FROM series
   INNER JOIN authors ON authors.id = series.author_id
   INNER JOIN characters ON characters.author_id = authors.id
+  WHERE characters.species = 'human'
   GROUP BY series.id
-  HAVING characters.species = 'human'
-  ORDER BY COUNT(characters.species)
+  ORDER BY COUNT(characters.species) DESC
   LIMIT 1;"
 end
 
