@@ -11,9 +11,9 @@ INSERT INTO books (id, title, year, series_id) VALUES
   (1, "Annihilation", 2014, 1),
   (2, "Authority", 2014, 1),
   (3, "Acceptance", 2014, 1),
-  (4, "The Fellowship of the Ring", 2),
-  (5, "The Two Towers", 2),
-  (6, "The Return of the King", 2);
+  (4, "The Fellowship of the Ring", 1954, 2),
+  (5, "The Two Towers", 1954, 2),
+  (6, "The Return of the King", 1955, 2);
 
  INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES
  (1, "Biologist", "Where am i", "clone", 1, 1),
