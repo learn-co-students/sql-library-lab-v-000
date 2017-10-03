@@ -16,21 +16,16 @@ INSERT INTO books (id, title, year, series_id) VALUES
   (6, "The Return of the King", 2);
 
  INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES
- (1, "Biologist", " ", "human", 1, 1),
- (2, "Control", " ", "human", 1, 1),
- (3, "Psychologist", " ", "human", 1, 1),
+ (1, "Biologist", "Where am i", "clone", 1, 1),
+ (2, "Control", "Uh-oh", "human", 1, 1),
+ (3, "Psychologist", "You have no idea", "human", 1, 1),
  (4, "Saul Evans", "Where lies the strangling fruit...", "monster", 1, 1),
- (5, "Frodo", "gandalf", "hobbit", 2, 2),
+ (5, "Samwise", "But Mr Frodo...", "hobbit", 2, 2),
  (6, "Gollum", "My Precious", "hobbit", 2, 2),
- (7, "Gandalf", "You shall not pass", "wizard", 2, 2),
- (8, "Legolas", "one more", "elf", 2, 2);
+ (7, "Tom", "Giddyup", "deity", 2, 2),
+ (8, "Sharky", "Hello friends", "wizard", 2, 2);
 
  INSERT INTO character_books(id, character_id, book_id) VALUES
- (1, 1, ),
- (2, 2),
- (3, 3), 
- (4, 4),
- (5, 5),
- (6, 6),
- (7, 7),
- (8, 8);
+ (1, 1, 1), (2, 1, 2), (3, 1, 3), (4, 2, 2), (5, 3, 1), (6, 4, 1),
+ (7, 4, 2), (8, 4, 3), (9, 5, 4), (10, 5, 5), (11, 5, 6), (12, 6, 4),
+ (13, 6, 5), (14, 6, 6), (15, 7, 4), (16, 8, 6);
