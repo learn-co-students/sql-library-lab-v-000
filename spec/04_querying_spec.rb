@@ -11,15 +11,18 @@ describe 'querying' do
   end
 
   it 'returns the name and motto of the character with the longest motto' do
-    expect(@db.execute(select_name_and_motto_of_char_with_longest_motto)).to eq([["Tyrion Lannister", "A Lannister always pays his debts"]])
+    expect(@db.execute(select_name_and_motto_of_char_with_longest_motto)).to eq([["Valentine", "Welcome to the human race. Nobody controls his own life, Ender. The best you can do is choose to fill the roles given you by good people, by people who love you."]])
+    #I changed this test so that the correct result matches the data I created
   end
 
   it 'determines the most prolific species of characters and return its value and count' do
-    expect(@db.execute(select_value_and_count_of_most_prolific_species)).to eq([["human", 4]])
+    expect(@db.execute(select_value_and_count_of_most_prolific_species)).to eq([["human", 6]])
+    #I changed this test so that the correct result matches the data I created
   end
 
   it "selects the authors names and their series' subgenres" do
-    expect(@db.execute(select_name_and_series_subgenres_of_authors)).to eq([["George R. R. Martin", "medieval"], ["Second Author", "space opera"]])
+    expect(@db.execute(select_name_and_series_subgenres_of_authors)).to eq([["George R. R. Martin", "medieval"], ["Orson Scott Card", "science fiction"]])
+    #I changed this test so that the correct result matches the data I created
   end
 
   it 'selects the series title with the most characters that are the species "human"' do
@@ -27,6 +30,6 @@ describe 'querying' do
   end
 
   it 'selects all of the character names and their number of books they have appeared in, in descending order' do
-    expect(@db.execute(select_character_names_and_number_of_books_they_are_in)).to eq([["Character Three",3], ["Character Two", 3],["Daenerys Targaryen", 3], ["Tyrion Lannister", 3], ["Character Four", 1], ["Character One", 1], ["Eddard Stark", 1], ["Lady", 1]])
+    expect(@db.execute(select_character_names_and_number_of_books_they_are_in)).to eq([["Daenerys Targaryen", 3], ["Graff", 3], ["Tyrion Lannister", 3], ["Valentine", 3], ["Captain Dimak", 1], ["Eddard Stark", 1], ["Ender Wiggin", 1], ["Lady", 1]])
   end
 end
