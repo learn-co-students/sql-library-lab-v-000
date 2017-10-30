@@ -18,7 +18,6 @@ INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (2, "Tyrion Lannister", "A Lannister always pays his debts", "human", 1, 1);
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (3, "Daenerys Targaryen", "If I look back I am lost", "human", 1, 1);
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (4, "Eddard Stark", "Winter is coming", "human", 1, 1);
-
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (5, "Character One", "motto one", "cylon", 2, 2);
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (6, "Character Two", "motto two", "human", 2, 2);
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (7, "Character Three", "motto three", "cylon", 2, 2);
@@ -29,7 +28,7 @@ INSERT INTO character_books (id, book_id, character_id) VALUES (2, 1, 2);
 INSERT INTO character_books (id, book_id, character_id) VALUES (3, 2, 2);
 INSERT INTO character_books (id, book_id, character_id) VALUES (4, 3, 2);
 INSERT INTO character_books (id, book_id, character_id) VALUES (5, 1, 3);
-INSERT INTO character_books (id, book_id, character_id) VALUES 6, 2, 3);
+INSERT INTO character_books (id, book_id, character_id) VALUES (6, 2, 3);
 INSERT INTO character_books (id, book_id, character_id) VALUES (7, 3, 3);
 INSERT INTO character_books (id, book_id, character_id) VALUES (8, 1, 4);
 
