@@ -11,15 +11,15 @@ def select_value_and_count_of_most_prolific_species
   "SELECT characters.species, COUNT(characters.species) AS count FROM characters GROUP BY characters.species ORDER BY count DESC LIMIT 1"
 end
 
-def select_name_and_series_subgenres_of_authors
-  "SELECT authors.name, subgenres.name FROM authors INNER JOIN (SELECT series.id, subgenres.name FROM subgenres INNER JOIN series ON subgenres.id = series.subgenre_id)
-  ON authors.id = series.author_id;"
+def select_character_names_and_number_of_books_they_are_in
+  "SELECT characters.name, COUNT(character_books.book_id) FROM characters INNER JOIN character_books ON characters.id = character_books.character_id GROUP BY characters.name ORDER BY COUNT(character_books.book_id) DESC;"
 end
 
 def select_series_title_with_most_human_characters
-  "SELECT series.title FROM series INNER JOIN characters ON series.author_id = characters.author_id GROUP BY characters.series_id HAVING characters.species = 'human';"
+  "SELECT series.title FROM series INNER JOIN characters ON series.author_id = characters.author_id GROUP BY characters.series_id ORDER BY COUNT(characters.species) DESC LIMIT 1;"
 end
 
-def select_character_names_and_number_of_books_they_are_in
-  "SELECT characters.name, COUNT(character_books.book_id) FROM characters INNER JOIN character_books ON characters.id = character_books.character_id GROUP BY characters.name ORDER BY COUNT(character_books.book_id) DESC;"
+def select_name_and_series_subgenres_of_authors
+  "SELECT authors.name, subgenres.name FROM authors INNER JOIN (SELECT series.id, subgenres.name FROM subgenres INNER JOIN series ON subgenres.id = series.subgenre_id)
+  ON authors.id = series.author_id;"
 end
