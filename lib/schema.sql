@@ -11,11 +11,12 @@ Each row in this join table acts as a relation between a book and a character.*/
 
 CREATE TABLE series (
   id INTEGER PRIMARY KEY,
-  author INTEGER,
-  sub-genre INTEGER
+  author_id INTEGER,
+  subgenre_id INTEGER,
+  title TEXT
 );
 
-CREATE TABLE sub_genres (
+CREATE TABLE subgenres (
   id INTEGER PRIMARY KEY,
   name TEXT
 );
