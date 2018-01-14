@@ -1,18 +1,11 @@
-CREATE TABLE projects
-    (id INTEGER PRIMARY KEY,
-    title TEXT,
-    category TEXT,
-    funding_goal INTEGER,
-    start_date TEXT,
-    end_date TEXT);
 CREATE TABLE series
   (id INTEGER PRIMARY KEY,
     title TEXT,
     author_id INTEGER,
-    sub-genre_id INTEGER
+    subgenre_id INTEGER
   );
 
-CREATE TABLE sub-genres
+CREATE TABLE subgenres
 (id INTEGER PRIMARY KEY,
   name TEXT
 );
@@ -36,4 +29,9 @@ CREATE TABLE characters
   species TEXT,
   author_id INTEGER,
   series_id INTEGER
+);
+CREATE TABLE character_books
+(id INTEGER PRIMARY KEY,
+  character_id INTEGER,
+  book_id
 );
