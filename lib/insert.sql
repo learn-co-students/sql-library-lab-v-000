@@ -13,3 +13,6 @@ INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (
 
 INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (13, "Sandman", "I am sleepy", "Sander", 4, 4), (14, "Sandwoman", "I am also sleepy", "Sander", 4, 4),
  (15, "Twister", "I am awake", "winder", 4, 4), (16, "Reynolda", "I am thirsty", "thirster", 4, 4);
+
+INSERT INTO character_books (id, book_id, character_id) VALUES (17, 7, 9), (18, 7, 10), (19, 7, 11), (20, 8, 9), (21, 8, 10), (22, 9, 9), (23, 9, 10), (24, 9, 12);
+INSERT INTO character_books (id, book_id, character_id) VALUES (25, 10, 13), (26, 10, 14), (27, 10, 15), (28, 11, 13), (29, 11, 14), (30, 12, 13), (31, 12, 14), (32, 12, 16);
