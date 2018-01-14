@@ -6,7 +6,7 @@ INSERT INTO series VALUES (2, "The Marianne Trilogy", 2, 2);
 INSERT INTO subgenres (id, name) VALUES (
   1, "Chinese SciFi"
 );
-INSERT INTO subgenres (2, "Fantasy");
+INSERT INTO subgenres VALUES (2, "Fantasy");
 
 INSERT INTO authors (id, name) VALUES (
   1, "David Wingrove"
