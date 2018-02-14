@@ -36,25 +36,7 @@ def select_series_title_with_most_human_characters
   DESC
   LIMIT 1"
 end
-# CREATE TABLE characters(
-#   id INTEGER PRIMARY KEY,
-#   name TEXT,
-#   motto TEXT,
-#   species TEXT,
-#   author_id INTEGER,
-#   series_id INTEGER
-# );
-# CREATE TABLE character_books(
-#   id INTEGER PRIMARY KEY,
-#   book_id INTEGER,
-#   character_id INTEGER
-# );
-# CREATE TABLE books(
-#   id INTEGER PRIMARY KEY,
-#   title TEXT,
-#   year INTEGER,
-#   series_id INTEGER
-# );
+
 def select_character_names_and_number_of_books_they_are_in
   "SELECT Characters.name, COUNT(Books.title)
   FROM Characters
