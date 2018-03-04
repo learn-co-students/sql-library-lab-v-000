@@ -3,9 +3,8 @@ id INTEGER PRIMARY KEY,
 title TEXT,
 subgenre TEXT,
 Authors TEXT,
-Books TEXT,
 Characters TEXT,
-Books TEXT);
+books TEXT);
 
 
 CREATE TABLE subgenres (
