@@ -1,3 +1,3 @@
-UPDATE table_name
-SET characters.species = "Martian"
+UPDATE characters
+SET species = "Martian"
 WHERE id = (SELECT MAX(id) FROM characters);
