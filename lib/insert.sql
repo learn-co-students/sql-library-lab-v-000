@@ -33,4 +33,11 @@ INSERT INTO character_books (id, book_id, character_id) VALUES (6, 2, 3);
 INSERT INTO character_books (id, book_id, character_id) VALUES (7, 3, 3);
 INSERT INTO character_books (id, book_id, character_id) VALUES (8, 1, 4);
 
-INSERT INTO character_books (id, book_id, character_id) VALUES (9, 4, 5), (10, 4, 6), (11, 5, 6), (12, 6, 6), (13, 4, 7), (14, 5, 7), (15, 6, 7), (16, 4, 8);
+INSERT INTO character_books (id, book_id, character_id) VALUES (9, 4, 5);
+INSERT INTO character_books (id, book_id, character_id) VALUES (10, 4, 6);
+INSERT INTO character_books (id, book_id, character_id) VALUES (11, 5, 6);
+INSERT INTO character_books (id, book_id, character_id) VALUES (12, 6, 6);
+INSERT INTO character_books (id, book_id, character_id) VALUES (13, 4, 7);
+INSERT INTO character_books (id, book_id, character_id) VALUES (14, 5, 7);
+INSERT INTO character_books (id, book_id, character_id) VALUES (15, 6, 7);
+INSERT INTO character_books (id, book_id, character_id) VALUES (16, 4, 8);
