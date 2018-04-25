@@ -3,6 +3,6 @@ join character_books
 on characters.id = character_books.character_id
 join books
 on character_books.book_id = books.id
-group by characters.id
-order by count(characters.id) desc
+group by characters.name
+order by count(characters.id) desc 
 
