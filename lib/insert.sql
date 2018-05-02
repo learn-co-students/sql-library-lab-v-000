@@ -25,4 +25,4 @@ INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Edw
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Alistair", "I go wherever the wind blows.", "vampire", 2, 2);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Collin Littlesea", "Age is just a number.", "werewolf", 2, 2);
 
-
+INSERT INTO character_books (character_id, book_id) VALUES ();
