@@ -14,4 +14,7 @@ INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Her
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Troll", "Grunt", "troll", 1, 1);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Hagrid", "I am what I am, an’ I’m not ashamed.", "human/giant", 1, 1);
 
-INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Bella", "", "human/v", 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Bella", "Love is blind.", "human/vampire", 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Edward", "Lying will get you nowhere with me.", "vampire", 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Alistair", "I go wherever the wind blows.", "vampire", 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Collin Littlesea", "Age is just a number.", "werewolf", 2, 2);
