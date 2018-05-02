@@ -1,6 +1,12 @@
 INSERT INTO series (title, author_id, subgenre_id) VALUES ("Harry Potter", 1, 1);
 INSERT INTO series (title, author_id, subgenre_id) VALUES ("Twilight", 2, 2);
 
+INSERT INTO subgenres (name) VALUES ("Magic");
+INSERT INTO subgenres (name) VALUES ("Vampire");
+
+INSERT INTO authors (name) VALUES ("J.K. Rowling");
+INSERT INTO authors (name) VALUES ("Stephanie Meyer");
+
 INSERT INTO books (title, year, series_id) VALUES ("Sorcerer's Stone", 1997, 1);
 INSERT INTO books (title, year, series_id) VALUES ("Chamber of Secrets", 1998, 1);
 INSERT INTO books (title, year, series_id) VALUES ("Prisoner of Azkaban", 1999, 1);
@@ -18,3 +24,5 @@ INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Bel
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Edward", "Lying will get you nowhere with me.", "vampire", 2, 2);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Alistair", "I go wherever the wind blows.", "vampire", 2, 2);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Collin Littlesea", "Age is just a number.", "werewolf", 2, 2);
+
+
