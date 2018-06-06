@@ -19,3 +19,29 @@ INSERT INTO characters (name, motto, species, author_id, series_id) VALUES
 ("Tyrion Lannister", "A Lannister always pays his debts", "human", 1, 1),
 ("Daenerys Targaryen", "If I look back I am lost", "human", 1, 1),
 ("Eddard Stark", "Winter is coming", "human", 1, 1);
+
+INSERT INTO subgenres (name) VALUES
+("medieval"),
+("space opera");
+
+INSERT INTO authors (name) VALUES
+("George R. R. Martin"),
+("Second Author");
+
+INSERT INTO character_books (book_id, character_id) VALUES
+(1, 1),
+(1, 2),
+(2, 2),
+(3, 2),
+(1, 3),
+(2, 3),
+(3, 3),
+(1, 4),
+(4, 5),
+(4, 6),
+(5, 6),
+(6, 6),
+(4, 7),
+(5, 7),
+(6, 7),
+(4, 8);
