@@ -7,17 +7,20 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT characters.species, COUNT(characters.species) FROM characters ORDER BY COUNT(characters.species) DESC LIMIT 1"
+  "SELECT characters.species, COUNT(characters.species) FROM characters GROUP BY characters.species ORDER BY COUNT(characters.species) DESC LIMIT 1"
 end
 
 def select_name_and_series_subgenres_of_authors
-  "Write your SQL query here"
+  #series_subgenres
+  #get series, get author_id in series, get subgenre_id in series. Use both ids to get author name and subgenre
+  "SELECT authors.name, subgenres.name FROM authors, subgenres LEFT JOIN series ON authors.id = series.author_id AND subgenres.id = series.subgenre_id WHERE series.subgenre_id = subgenres.id"
 end
 
 def select_series_title_with_most_human_characters
-  "Write your SQL query here"
+  "SELECT title FROM series LEFT JOIN characters ON series.id = characters.series_id GROUP BY title ORDER BY COUNT(characters.species) DESC LIMIT 1 "
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "Write your SQL query here"
+  
+SELECT characters.name, COUNT(books.name) FROM characters LEFT JOIN books ON
 end
