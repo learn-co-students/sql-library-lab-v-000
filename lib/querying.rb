@@ -7,11 +7,11 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "Write your SQL query here"
+  "SELECT characters.species, COUNT(character_books.book_id) FROM characters INNER JOIN character_books ON characters.id = character_books.character_id GROUP BY character_books.character_id ORDER BY COUNT(character_books.book_id) DESC LIMIT 1;"
 end
 
 def select_name_and_series_subgenres_of_authors
-  "Write your SQL query here"
+  "SELECT authors.name, subgenres.name FROM authors LEFT OUTER JOIN (series LEFT OUTER JOIN subgenres ON series.subgenre_id = subgenres.id) series ON authors.id = series.author_id;"
 end
 
 def select_series_title_with_most_human_characters
