@@ -17,7 +17,11 @@ GROUP BY characters.species ORDER BY characters.species DESC LIMIT 1;"
 end
 
 def select_name_and_series_subgenres_of_authors
-  "Write your SQL query here"
+  "SELECT authors.name, subgenres.name FROM series
+JOIN authors
+ON series.author_id = authors.id
+JOIN subgenres
+ON series.subgenre_id = subgenres.id;"
 end
 
 def select_series_title_with_most_human_characters
