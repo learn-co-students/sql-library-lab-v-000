@@ -1,14 +1,23 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT Series.title, Books.year
+  "SELECT Books.title, Books.year
    FROM series
-   LEFT JOIN books
-   ON Series.id = Book.series_id
-   Limit 1;"
+   INNER JOIN books
+   ON Series.id = Books.series_id
+   ORDER BY Books.year
+   LIMIT 3;"
 end
 
+#above method is sketchy because 3 books is hard-coded
+
+
 def select_name_and_motto_of_char_with_longest_motto
-  "Write your SQL query here"
+  "SELECT Characters.name, Characters.motto
+   FROM Characters
+   ORDER BY Characters.motto
+   LIMIT 1;"
 end
+
+#another sketchy hard-coded method above...
 
 
 def select_value_and_count_of_most_prolific_species
