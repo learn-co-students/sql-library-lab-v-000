@@ -11,3 +11,11 @@ INSERT INTO books (title, year, series_id) VALUES ('Playdough for Plato', 1988, 
 INSERT INTO authors (name) VALUES ('John Smith');
 INSERT INTO authors (name) VALUES ('Bobbie Goodie');
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Goober', 'Semper Fi', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Dr. Smith', 'First do know harm', 'Gorken', 2, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Socrates', 'Apologies are for losers', 'human', 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Norm', 'The more beer, the better', 'Martian', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Goober', 'Semper Fi', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Goober', 'Semper Fi', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Goober', 'Semper Fi', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Goober', 'Semper Fi', 'human', 1, 1);
+
