@@ -1,0 +1,13 @@
+INSERT INTO series (title, author_id) VALUES ('Horror Stories', 1);
+INSERT INTO series (title, author_id) VALUES ('Greek Tragedies', 2);
+INSERT INTO subgenres (name) VALUES ('Slashers');
+INSERT INTO subgenres (name) VALUES ('Classical Greece');
+INSERT INTO books (title, year, series_id) VALUES ('Stabem High', 1977, 1);
+INSERT INTO books (title, year, series_id) VALUES ('Blood Lust', 1988, 1);
+INSERT INTO books (title, year, series_id) VALUES ('Hangem', 1965, 1);
+INSERT INTO books (title, year, series_id) VALUES ('Woe is Me', 1921, 2);
+INSERT INTO books (title, year, series_id) VALUES ('Socrates da Man', 1960, 2);
+INSERT INTO books (title, year, series_id) VALUES ('Playdough for Plato', 1988, 2);
+INSERT INTO authors (name) VALUES ('John Smith');
+INSERT INTO authors (name) VALUES ('Bobbie Goodie');
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Goober', 'Semper Fi', 'human', 1, 1);
