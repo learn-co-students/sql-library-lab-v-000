@@ -17,7 +17,7 @@ INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Nor
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Nitro Grummen', 'Its hammer time', 'Martian', 1, 1);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Wilber Reese', 'Life is like a box of chocolates', 'Gorken', 1, 2);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Lisa Limbs', 'Humans delicious', 'Zombie', 2, 1);
-INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Walter Scott', 'Ho hum', 'human', 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Walter Scott', 'Ho hum', 'Reptile', 2, 2);
 INSERT INTO character_books (character_id, book_id) VALUES (1, 1);
 INSERT INTO character_books (character_id, book_id) VALUES (1, 2);
 INSERT INTO character_books (character_id, book_id) VALUES (1, 3);
