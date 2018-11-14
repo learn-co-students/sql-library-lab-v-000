@@ -1,4 +1,4 @@
-_idINSERT INTO series (series_title, author_id) VALUES ('Horror Stories', 1);
+INSERT INTO series (series_title, author_id) VALUES ('Horror Stories', 1);
 INSERT INTO series (series_title, author_id) VALUES ('Greek Tragedies', 2);
 INSERT INTO subgenres (name) VALUES ('Slashers');
 INSERT INTO subgenres (name) VALUES ('Classical Greece');
@@ -21,7 +21,14 @@ INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Wal
 INSERT INTO character_books (character_id, book_id) VALUES (1, 1)
 INSERT INTO character_books (character_id, book_id) VALUES (1, 2)
 INSERT INTO character_books (character_id, book_id) VALUES (1, 3)
-INSERT INTO character_books (character_id, book_id) VALUES (2, 2)
+INSERT INTO character_books (character_id, book_id) VALUES (2, 4)
+INSERT INTO character_books (character_id, book_id) VALUES (2, 5)
+INSERT INTO character_books (character_id, book_id) VALUES (2, 6)
 INSERT INTO character_books (character_id, book_id) VALUES (3, 1)
+INSERT INTO character_books (character_id, book_id) VALUES (3, 4)
 INSERT INTO character_books (character_id, book_id) VALUES (4, 2)
-INSERT INTO character_books (character_id, book_id) VALUES (4, 2)
+INSERT INTO character_books (character_id, book_id) VALUES (5, 6)
+INSERT INTO character_books (character_id, book_id) VALUES (6, 1)
+INSERT INTO character_books (character_id, book_id) VALUES (7, 5)
+INSERT INTO character_books (character_id, book_id) VALUES (8, 2)
+
