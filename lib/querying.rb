@@ -24,12 +24,21 @@ def select_name_and_series_subgenres_of_authors
 end
 
 def select_series_title_with_most_human_characters
-  "SELECT series.title, characters.species FROM series 
+  "SELECT series.title FROM series
    INNER JOIN characters ON series.id = characters.series_id
-   WHERE species = "human";"
-   # NOTE: this is a PARTIAL solution; I have to somehow use COUNT(characters.species) and maybe a subquery.
+   WHERE characters.species = 'human'
+   GROUP BY series.title
+   ORDER BY COUNT(characters.species) DESC
+   LIMIT 1;"
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "Write your SQL query here"
+  "SELECT characters.name, COUNT(characters.name) AS total_book_appearances
+   FROM characters
+   INNER JOIN character_books 
+   ON characters.id = character_books.character_id
+   GROUP BY characters.name
+   ORDER BY total_book_appearances DESC, characters.name;"
+  # Note: ORDER BY characters.name doesn't make a difference in this case, but I'm doing it to be safe.
+  # Also, replacing GROUP BY...ORDER BY... with ORDER BY characters.name DESC returns ["Character Four", 16], but I thought it would return ["Tyrion Lannister", 16].
 end
