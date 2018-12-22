@@ -32,7 +32,7 @@ INSERT INTO characters (id, name, species, motto, author_id, series_id) VALUES
 
 INSERT INTO books (id, title, year, series_id) VALUES
 --(1) harry potter
-(1, 'Harry Potter and the Sorcerer\'s Stone', '9/01/98',1),
+(1, 'Harry Potter and the Sorcerers Stone', '9/01/98',1),
 (2, 'Harry Potter and the Chamber of Secrets', '6/02/99',1),
 (3, 'Harry Potter and the Goblet of Fire', '8/07/00',1),
 
