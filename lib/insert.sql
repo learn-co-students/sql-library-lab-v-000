@@ -2,31 +2,31 @@
       -- "https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_characters"
 -- Harry Potter - "http://harrypotter.wikia.com/wiki/Harry_Potter_(book_series)"
 
-INSERT INTO characters (id, name, series, motto, author_id, series_id) VALUES
+INSERT INTO characters (id, name, species, motto, author_id, series_id) VALUES
 --(1) harry potter
       -- 1. all books:
-(1, 'Harry Potter', 'Harry Potter' , "Never tickle a sleeping dragon", 1, 1),
+(1, 'Harry Potter', 'Human' , "Never tickle a sleeping dragon", 1, 1),
 --(1) harry potter
       -- 2. all books:
-(2, 'Ron Weasley', 'Harry Potter' , "Draco Dormiens Nunquam Titillandus", 1, 1),
+(2, 'Ron Weasley', 'Human' , "Draco Dormiens Nunquam Titillandus", 1, 1),
 --(1) harry potter
       -- 3. only one book:
-(3, 'Roger Davies', 'Harry Potter' , " 'Wit beyond measure is man's greatest treasure.' - Rowena Ravenclaw", 1, 1),
+(3, 'Roger Davies', 'Human' , " 'Wit beyond measure is man's greatest treasure.' - Rowena Ravenclaw", 1, 1),
 --(1) harry potter
       -- 4. only one book:
-(4, 'Cedric Diggory', 'Harry Potter' , "Everyone says Hufflepuff are a lot o' duffers", 1, 1),
+(4, 'Cedric Diggory', 'Human' , "Everyone says Hufflepuff are a lot o' duffers", 1, 1),
 --(2) Game of Thrones
       -- 1. all books:
-(5, 'Jaime Lannister', 'Game of Thrones' , "Hear me roar!", 2, 2),
+(5, 'Jaime Lannister', 'Human' , "Hear me roar!", 2, 2),
 --(2) Game of Thrones
       -- 2. all books:
-(6, 'Cersei Lannister', 'Game of Thrones' , "A Lannister always pays his debts.", 2, 2),
+(6, 'Cersei Lannister', 'Human' , "A Lannister always pays his debts.", 2, 2),
 --(2) Game of Thrones
       -- 3. only one book:
-(7, 'Eddard "Ned" Stark', 'Game of Thrones' , "Winter Is Coming.", 2, 2),
+(7, 'Eddard "Ned" Stark', 'Human' , "Winter Is Coming.", 2, 2),
 --(2) Game of Thrones
       -- 4. only one book:
-(8, 'Robert Baratheon', 'Game of Thrones' , "Ours is the Fury", 2, 2);
+(8, 'Robert Baratheon', 'Human' , "Ours is the Fury", 2, 2);
 
 
 

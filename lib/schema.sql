@@ -3,19 +3,19 @@ CREATE TABLE characters (
  name TEXT,
  species TEXT,
  motto TEXT,
- author_id INTEGER
+ author_id INTEGER,
  series_id INTEGER);
- 
+
 CREATE TABLE books (
  id INTEGER PRIMARY KEY,
 title TEXT,
-year INTEGER
+year INTEGER,
 series_id INTEGER);
 
 CREATE TABLE series (
  id INTEGER PRIMARY KEY,
-title TEXT
-subgenre_id INTEGER
+title TEXT,
+subgenre_id INTEGER,
 author_id INTEGER);
 
 CREATE TABLE authors (
