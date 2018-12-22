@@ -1,31 +1,49 @@
 -- Game of Thrones - "https://en.wikipedia.org/wiki/A_Song_of_Ice_and_Fire#cite_note-pw_review_acok-13"
+      -- "https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_characters"
 -- Harry Potter - "http://harrypotter.wikia.com/wiki/Harry_Potter_(book_series)"
 
 INSERT INTO characters (id, name, series, motto, author_id, series_id) VALUES
--- (1, 'Help me buy a guitar', 'music', 500.00, '2013-06-30', '2013-07-30'),
--- (2, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
--- (10, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
+--(1) harry potter
+      -- 1. all books:
+(1, 'Harry Potter', 'Harry Potter' , "Never tickle a sleeping dragon", 1, 1),
+--(1) harry potter
+      -- 2. all books:
+(2, 'Ron Weasley', 'Harry Potter' , "Draco Dormiens Nunquam Titillandus", 1, 1),
+--(1) harry potter
+      -- 3. only one book:
+(3, 'Roger Davies', 'Harry Potter' , " 'Wit beyond measure is man's greatest treasure.' - Rowena Ravenclaw", 1, 1),
+--(1) harry potter
+      -- 4. only one book:
+(4, 'Cedric Diggory', 'Harry Potter' , "Everyone says Hufflepuff are a lot o' duffers", 1, 1),
+
+-- (5, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
+-- (6, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
+-- (7, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
+-- (8, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
+
 
 
     -- 4 characters in each series
       --(1) harry potter
       -- 1. all books:
+--Harry Potter
 
       -- 2. all books:
-
+--Ron Weasley
       -- 3. only one book:
-
+-- Roger Davies
       -- 4. only one book:
+-- Cedric Diggory
 
     --(2) Game of Thrones
       -- 1. all books:
-
+Jaime Lannister
       -- 2. all books:
-
+Cersei Lannister
       -- 3. only one book:
-
+Eddard "Ned" Stark
       -- 4. only one book:
-
+ Robert Baratheon
 
 
 
