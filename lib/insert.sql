@@ -58,7 +58,12 @@ INSERT INTO subgenres (id, name) VALUES
 (2, 'Political novel');
 
 INSERT INTO character_books (id, character_id, book_id) VALUES
--- (1, 10.00),
--- (2, 20.00),
--- (3, 40.00),
--- (30, 450.00);
+(1, 1,1),
+(2, 2,1),
+(3, 3,2),
+(4, 4,3),
+
+(5, 5,1),
+(6, 6,1),
+(7, 7,2),
+(8, 8,3);
