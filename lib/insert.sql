@@ -15,35 +15,18 @@ INSERT INTO characters (id, name, series, motto, author_id, series_id) VALUES
 --(1) harry potter
       -- 4. only one book:
 (4, 'Cedric Diggory', 'Harry Potter' , "Everyone says Hufflepuff are a lot o' duffers", 1, 1),
-
--- (5, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
--- (6, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
--- (7, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
--- (8, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
-
-
-
-    -- 4 characters in each series
-      --(1) harry potter
+--(2) Game of Thrones
       -- 1. all books:
---Harry Potter
-
+(5, 'Jaime Lannister', 'Game of Thrones' , "Hear me roar!", 2, 2),
+--(2) Game of Thrones
       -- 2. all books:
---Ron Weasley
+(6, 'Cersei Lannister', 'Game of Thrones' , "A Lannister always pays his debts.", 2, 2),
+--(2) Game of Thrones
       -- 3. only one book:
--- Roger Davies
+(7, 'Eddard "Ned" Stark', 'Game of Thrones' , "Winter Is Coming.", 2, 2),
+--(2) Game of Thrones
       -- 4. only one book:
--- Cedric Diggory
-
-    --(2) Game of Thrones
-      -- 1. all books:
-Jaime Lannister
-      -- 2. all books:
-Cersei Lannister
-      -- 3. only one book:
-Eddard "Ned" Stark
-      -- 4. only one book:
- Robert Baratheon
+(8, 'Robert Baratheon', 'Game of Thrones' , "Ours is the Fury", 2, 2);
 
 
 
