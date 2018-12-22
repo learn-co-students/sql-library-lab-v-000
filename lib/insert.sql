@@ -58,12 +58,45 @@ INSERT INTO subgenres (id, name) VALUES
 (2, 'Political novel');
 
 INSERT INTO character_books (id, character_id, book_id) VALUES
-(1, 1,1),
-(2, 2,1),
-(3, 3,2),
-(4, 4,3),
+------------------------------------
+-- (character_id) name book_id's --
+------------------------------------
+-- (1)Harry Potter 1,2,3
+-- (2)Ron Weasley 1,2,3
+-- (3)Roger Davies 2
+-- (4)Cedric Diggory 3
+-- (5)Jaime Lannister 1,2,3
+-- (6)Cersei Lannister 1,2,3
+-- (7)Eddard "Ned" Stark 2
+-- (8)Robert Baratheon 3
 
-(5, 5,1),
-(6, 6,1),
-(7, 7,2),
-(8, 8,3);
+-- Harry Potter
+(1, 1,1),
+(2, 1,2),
+(3, 1,3),
+
+-- Ron Weasley
+(4, 2,1),
+(5, 2,2),
+(6, 2,3),
+
+-- Roger Davies
+(7, 3,2),
+
+-- Cedric Diggory
+(8, 4,3),
+
+-- Jaime Lannister
+(9, 5, 1),
+(10, 5,2),
+(11, 5,3),
+-- Cersei Lannister
+(12, 6,1),
+(13, 6,2),
+(14, 6,3),
+
+-- Eddard "Ned" Stark
+(15, 7,2),
+
+-- Robert Baratheon
+(16, 8,3);
