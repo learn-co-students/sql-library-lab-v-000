@@ -1,0 +1,33 @@
+series
+  - title
+
+sub_genre
+  - name
+
+author
+  - name
+
+book
+  - title
+  - year
+
+character
+  - name
+  - motto
+  - species
+
+
+  Books have many characters and
+  characters are in many books in a series.
+
+  How do we accomplish this complex association?
+  With a join table between Characters and Books.
+
+  This join table (let's call it character_books) will just
+  have -in addition to its primary key- two foreign key
+  columns for the character and book ids.
+  Each row in this join table acts as a relation
+  between a book and a character.
+
+
+  #So I think we're looking for the author's name and the subgenres names
