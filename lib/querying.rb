@@ -11,11 +11,10 @@ def select_value_and_count_of_most_prolific_species
 end
 
 def select_name_and_series_subgenres_of_authors
-  "SELECT author.name, subgenres.name FROM series 
-  LEFT JOIN author ON series.author_id = author.id
-  LEFT JOIN subgenres ON series.subgenres_id = subgenres.id"
+  "SELECT authors.name, subgenres.name FROM series 
+  LEFT JOIN authors ON series.author_id = authors.id
+  LEFT JOIN subgenres ON series.subgenre_id = subgenres.id"
 end
-# ELECT projects.title, SUM(pledges.amount) FROM projects LEFT JOIN pledges ON projects.id = pledges.project_id GROUP BY projects.title;
 
 def select_series_title_with_most_human_characters
   "Write your SQL query here"
