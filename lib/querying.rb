@@ -1,5 +1,5 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT books.title, books.year FROM books
+  "SELECT books.year, books.title FROM books
   JOIN books ON books.series_id = series.id
   WHERE series.id = 1
   GROUP BY books.year"
@@ -17,8 +17,8 @@ def select_value_and_count_of_most_prolific_species
 end
 
 def select_name_and_series_subgenres_of_authors
-  "SELECT authors.name, series.subgenre_id, subgenres.name FROM authors
-  JOIN subgenres ON series.subgenre_id = subgenres.id"
+  "SELECT subgenres.name, authors.name FROM authors
+  JOIN series ON series.subgenre_id = subgenres.id"
 end
 
 def select_series_title_with_most_human_characters
@@ -26,9 +26,12 @@ def select_series_title_with_most_human_characters
   JOIN series ON series.id = characters.series_id
   WHERE characters.species = 'human'
   GROUP BY series.title
-  ORDER BY characters.species DESC LIMIT 1"
+"
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "Write your SQL query here"
+  "SELECT characters.name, COUNT(character_books.book_id) FROM character_books
+  JOIN characters on characters.id = character_books.character_id
+  GROUP BY characters.name
+  ORDER BY COUNT(character_books.book_id) DESC"
 end
