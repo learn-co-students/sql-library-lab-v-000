@@ -1,4 +1,4 @@
-
+/*-SERIES-*/
 /* series belongs to author and subgenres */
 CREATE TABLE series (
   id INTEGER PRIMARY KEY,
@@ -7,16 +7,19 @@ CREATE TABLE series (
   subgenre_id INTEGER
 );
 
+/*-SUBGENRES-*/
 CREATE TABLE subgenres (
   id INTEGER PRIMARY KEY,
   name TEXT
 );
 
+/*-AUTHORS-*/
 CREATE TABLE authors (
   id INTEGER PRIMARY KEY,
   name TEXT
 );
 
+/*-BOOKS-*/
 /* books belongs to series, has many characters, characters are in many books in a series */
 CREATE TABLE books (
   id INTEGER PRIMARY KEY,
@@ -25,6 +28,7 @@ CREATE TABLE books (
   series_id INTEGER
 );
 
+/*-CHARACTERS-*/
 /* characters belongs to authors and series */
 CREATE TABLE characters (
   id INTEGER PRIMARY KEY,
@@ -35,7 +39,8 @@ CREATE TABLE characters (
   series_id INTEGER
 );
 
-/* a JOIN TABLE between characters and books to keep track of the associations by id */
+/*-CHARACTER_BOOKS JOIN TABLE-*/
+/* a JOIN TABLE between characters + books to keep track of the associations by id only */
 CREATE TABLE character_books (
   id INTEGER PRIMARY KEY,
   character_id INTEGER,

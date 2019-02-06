@@ -1,47 +1,50 @@
-INSERT INTO series (title, author_id, subgenre_id)
-VALUES 
-('Harry Potter', 1, 1), 
-('The Lord of the Rings', 2, 2);
 
-INSERT INTO subgenre (name)
-VALUES 
-('low fantasy'), 
-('high fantasy');
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES 
+(1, "A Song of Ice and Fire", 1, 1), 
+(2, "Second Series", 2, 2);
 
-INSERT INTO authors (name)
-VALUES 
-('J. K. Rowling'),
-('J. R. R. Tolkien');
+INSERT INTO subgenres (id, name) VALUES 
+(1, "medieval"), 
+(2, "space opera");
 
-INSERT INTO books (title, year, series_id)
-VALUES 
-/*Harry Potter */
-('Harry Potter and the Philosophers Stone', 1997, 1),
-('The Prisoner of Azkaban ', 1999, 1),
-('The Chamber of Secrets ', 1998, 1),
+INSERT INTO authors (id, name) VALUES 
+(1, "George R. R. Martin"), 
+(2, "Second Author");
 
-/*Lord of the rings */
-('The Hobbit', 1937, 2)
-('The Fellowship of the Ring', 1954, 2),
-('The Two Towers', 1955, 2)
-;
+INSERT INTO books (id, title, year, series_id) VALUES 
+(1, "Game of Thrones", 1996, 1), 
+(2, "A Clash of Kings", 1998, 1), 
+(3, "A Storm of Swords", 2000, 1), 
+(4, "First Book", 2002, 2), 
+(5, "Second Book", 2003, 2), 
+(6, "Third Book", 2005, 2);
 
-INSERT INTO characters (name, species, motto, author_id, series_id)
-VALUES 
-/*Harry Potter */
-('Harry Potter', 'wizard', 'The last enemy that shall be destroyed is death',1, 1),
-('Hermione', 'witch', 'Oh I see, so basically, you’re going to take the best-looking girl who’ll have you, even if she’s completely horrible',1, 1),
-('Dumbledore', 'wizard', 'One can never have enough socks',1, 1),
-('Ron  Weasley', 'wizard', 'Do not let the Muggles get you down!',1, 1),
+INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES 
+(1, "Lady", "Woof Woof", "direwolf", 1, 1),
+(2, "Tyrion Lanister", "A Lanister always pays is debts", "human", 1, 1), 
+(3, "Daenerys Targaryen", "If I look back I am lost", "human", 1, 1), 
+(4, "Eddard Stark", "Winter is coming", "human", 1, 1),
+(5, "Character One", "motto one", "cylon", 2, 2), 
+(6, "Character Two", "motto two", "human", 2, 2), 
+(7, "Character Three", "motto three", "cylon", 2, 2), 
+(8, "Character Four", "motto four", "cylon", 2, 2);
 
-/*Lord of the rings */
-('Gollum', 'hobbit', 'We swears, to serve the master of the Precious. We will swear on… on the Precious!', 2, 2)
-('Frodo', 'human', 'It is useless to meet revenge with revenge: it will heal nothing.', 2, 2)
-('Gandalf', 'human', 'He that breaks a thing to find out what it is, has left the path of wisdom', 2, 2)
-('Lady Galadriel', 'human', 'Maybe the paths that you each shall tread are already laid before your feet, though you do not see them', 2, 2)
-;
+INSERT INTO character_books (id, book_id, character_id) VALUES 
+(1, 1, 1), 
+(2, 1, 2), 
+(3, 2, 2),
+(4, 3, 2), 
+(5, 1, 3), 
+(6, 2, 3), 
+(7, 3, 3), 
+(8, 1, 4);
 
-INSERT INTO character_books (character_id, book_id)
-VALUES 
-(1, 1),
-(2, 2);
+INSERT INTO character_books (id, book_id, character_id) VALUES 
+(9, 4, 5), 
+(10, 4, 6), 
+(11, 5, 6), 
+(12, 6, 6), 
+(13, 4, 7), 
+(14, 5, 7), 
+(15, 6, 7),
+(16, 4, 8);
