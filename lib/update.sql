@@ -1,0 +1,1 @@
+UPDATE Characters SET species = "Martian" order by id DESC limit 1 ; 
