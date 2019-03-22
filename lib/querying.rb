@@ -1,8 +1,6 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT books.year, books.title FROM books
-  JOIN books ON books.series_id = series.id
-  WHERE series.id = 1
-  GROUP BY books.year"
+  "SELECT books.title, books.year FROM books
+  ORDER by books.series_id LIMIT 3"
 end
 
 def select_name_and_motto_of_char_with_longest_motto
@@ -17,7 +15,7 @@ def select_value_and_count_of_most_prolific_species
 end
 
 def select_name_and_series_subgenres_of_authors
-  "SELECT subgenres.name, authors.name FROM authors
+  "SELECT authors.name, subgenres.name FROM subgenres
   JOIN series ON series.subgenre_id = subgenres.id"
 end
 
