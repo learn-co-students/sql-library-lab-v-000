@@ -38,3 +38,42 @@ INSERT INTO subgenres(id, name)
 INSERT INTO subgenres(id, name)
   VALUES (2, "fantasy");
   
+INSERT INTO authors(id, name)
+  VALUES (1, "Stephanie Meyer");
+INSERT INTO authors(id, name)
+  VALUES (2, "George RR Martin");
+  
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (1, 1, 1);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (2, 2, 1);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (3, 3, 1);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (4, 4, 4);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (5, 5, 4);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (6, 6, 4);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (7, 7, 4);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (8, 8, 4);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (9, 1, 2);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (10, 2, 2);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (11, 3, 2);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (12, 1, 3);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (13, 2, 3);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (14, 3, 3);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (15, 4, 5);
+INSERT INTO character_books(id, character_id, book_id)
+  VALUES (16, 5, 5);
+
+  
