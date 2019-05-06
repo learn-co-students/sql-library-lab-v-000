@@ -14,3 +14,7 @@ INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Bella
 INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Edward Cullen", "Hi Bella.", "vampire", 2, 2);
 INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Jacob Black", "I hate vampires!", "werewolf", 2, 2);
 INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Uncle Dersley", "Get to your room!", "human", 1, 1);
+INSERT INTO subgenres(name) VALUES("fantasy");
+INSERT INTO subgenres(name) VALUES("horror");
+INSERT INTO authors(name) VALUES("J.K. Rowling");
+INSERT INTO authors(name) VALUES("Stephanie Meyer");
