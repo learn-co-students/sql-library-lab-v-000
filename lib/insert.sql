@@ -1,0 +1,16 @@
+INSERT INTO series(title, author_id, subgenre_id) VALUES("Harry Potter", 1, 1);
+INSERT INTO series(title, author_id, subgenre_id) VALUES("Twilight", 2, 2);
+INSERT INTO books(title, year, series_id) VALUES("New Moon", 2006, 2);
+INSERT INTO books(title, year, series_id) VALUES("Eclipse", 2007, 2);
+INSERT INTO books(title, year, series_id) VALUES("Breaking Dawn", 2008, 2);
+INSERT INTO books(title, year, series_id) VALUES("Chambers of Secrets", 1998, 1);
+INSERT INTO books(title, year, series_id) VALUES("Goblet of Fire", 2000, 1);
+INSERT INTO books(title, year, series_id) VALUES("Half Blood Prince", 2005, 1);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Harry Potter", "Let's go!", "wizard", 1, 1);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Hermoine Granger", "Don't do that!","wizard", 1, 1);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Ron Weasly", "Oops!", "wizard", 1, 1);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Lupin", "Awoooo!", "werewolf", 1, 1);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Bella Swan", "Ummmm?", "human", 2, 2);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Edward Cullen", "Hi Bella.", "vampire", 2, 2);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Jacob Black", "I hate vampires!", "werewolf", 2, 2);
+INSERT INTO characters(name, motto, species, series_id, author_id) VALUES("Uncle Dersley", "Get to your room!", "human", 1, 1);
