@@ -19,7 +19,7 @@ INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Fro
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Bilbo Baggins", "I thought up an ending for my book. And he lives happily ever after, till the end of his days", "Hobbit", 1, 1);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Sam", "The one place in Middle-Earth we don’t want to see any closer", "Hobbit", 1, 1);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Harry Potter", "Draco Dormiens Nunquam Titillandus", "Child Wizard", 2, 2);
-INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Hermione", "Books! And cleverness!", "Witch", 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Hermione", "Books! And cleverness!", "wizard", 2, 2);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Lord Voldemort", "Pure Blood", "The Evil One", 2, 2);
 INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Draco Malfoy", "Sanctimonia Vincet Semper", "Student", 2, 2);
 
